@@ -77,7 +77,6 @@ public class TextWorker {
                 String[] mails = new String[matcher.group().length()];
                 mails[matcher.group().length() - 1] = matcher.group();
                 System. out. println (mails[matcher.group().length() - 1]) ;
-
             } else return null;
         }
        return null;

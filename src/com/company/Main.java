@@ -15,5 +15,7 @@ public class Main {
         System.out.println(check4);
         String[] check5=TextWorker.findAllMails("Some text rty@gmail.com and one more phj@company.com mail");
         System.out.println(check5);
+        ChainTextWorker worker=new ChainTextWorker(new TextProcessable[]{new InsertInformation(1,"eee"),new DeleteInformation(0,3),new AppendInformation("Fin"),new ReplaceInformation(1,4,"PIRELLI")});
+        System.out.print(worker.processText("Interes"));
     }
 }
